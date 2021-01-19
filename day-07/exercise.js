@@ -147,10 +147,9 @@ const findMaxNumber = (...arg) => {
         // let maximal = Math.max(element)
         numb.push(element)
     }
-    let joinString = numb.join(', ')
-    console.log(joinString)
-    let maxim = Math.max(joinString)
-    console.log(maxim)
+    const maxim = numb.forEach(nomorMax => Math.max(nomorMax))
+    console.log('Ximm', maxim)
+
 }
 
 console.log(findMaxNumber(0, -10, -20))
