@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack JavaScript</title>
+</head>
+
+<body>
+    <button onclick="alert('Day 18 of 30 Days JavaScript')">Click Me</button>
+    <button onclick="alert('Promises')">Click Me</button>
+    <!-- <script src="./index.js"></script> -->
+
+
+    <script>
+        const country = 'https://restcountries.eu/rest/v2/all'
+        // const catsApi = 'https://api.thecatapi.com/v1/breeds'
+
+        fetch(country)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                data.map((res, idx) => data[idx])
+            })
+            .catch(error => console.log(error))
+    </script>
+
+
+
+    <script src="./exercise.js"></script>
+</body>
+
+</html>
